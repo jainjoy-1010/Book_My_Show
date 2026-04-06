@@ -68,9 +68,10 @@ public class BookingService {
         booking.setShowSeats(showSeats);
         booking.setBookingStatus(BookingStatus.PENDING);
         booking.setAmount(priceCalculationService.calculatePrice(showSeats,show));
+
         //move to payment page
         // if payment success seat confirm
-        //if payment fails make seats available from blocked
+        // if payment fails make seats available from blocked
 
         return booking;
     }
