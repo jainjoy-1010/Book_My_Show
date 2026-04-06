@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-@EnableJpaAuditing  // automatic date and time created
+@EnableJpaAuditing  // automatic date and time created in base model also
 public class BookMyShowApplication implements CommandLineRunner {   // to run cmdline
 
     @Autowired
@@ -31,3 +31,4 @@ public class BookMyShowApplication implements CommandLineRunner {   // to run cm
 
     }
 }
+
